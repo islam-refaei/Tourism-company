@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Victor+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <aside>
+      <div
+        class="sidenav fixed-top h-100vh ms-auto d-flex justify-content-around align-items-center"
+      >
+        <ul
+          class="nav d-flex flex-column justify-content-between align-items-center w-100"
+          style="height: 45%"
+        >
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo image -->
+          <a href="" class="navbar-brand">
+            <img
+              src="images/—Pngtree—cartoon pyramid.png"
+              alt="logo"
+              style="width: 100px"
+              class="logo"
+            />
+            <span>EGY</span>
+          </a>
+          <!-- responsive button -->
+          <button
+            class="navbar-toggler btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span><img src="images/menu-burger.png" /></span>
+          </button>
+          <!--  links container -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link me-2">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link me-2">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle me-2"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trips
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark menu-City"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">CAIRO</a></li>
+                  <li><a class="dropdown-item" href="#">ALEX</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">LUXOR</a></li>
+                  <li><a class="dropdown-item" href="#">ASWAN</a></li>
+                  <li><a class="dropdown-item" href="#">FAYOUM</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">SHARM EL SHIKH</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">MORE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">About</a>
+              </li>
+            </ul>
+            <!-- form searching and login -->
+            <form class="d-flex">
+              <input class="rounded-2 me-3" type="text" placeholder="Search" />
+              <button
+                class="text-light btn-form me-3 px-2 py-1 rounded-3"
+                type="button"
+              >
+                Search
+              </button>
+              <button
+                type="button"
+                class="text-light btn-form px-2 rounded-3"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- container of header -->
+      </nav>
+      <!-- The login Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content p-5">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title m-auto">LOGIN</h4>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    ><i class="fa-regular fa-envelope me-2 text-success"></i
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-controlx"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    ><i class="fa-solid fa-key me-2 text-success"></i
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-controlx"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="mb-3 form-check form-switch">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Remmember me</label
+                  >
+                </div>
+              </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="submit"
+                class="text-light me-auto btn-form px-3 py-2 rounded-3"
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                class="text-light btn-form px-3 py-2 rounded-3"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active c-img">
+            <img
+              src="images/cairo (1).jpg"
+              alt="Los Angeles"
+              class="d-block w-100 img-slide"
+            />
+            <div class="carousel-caption">
+              <h3>CAIRO</h3>
+              <p>We had such a great time in Egypt</p>
+              <button class="text-light btn-form px-3 py-2 rounded-3">
+                visit Us
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-img">
+            <img
+              src="images/FFayoum.jpg"
+              alt="Chicago"
+              class="d-block w-100 img-slide"
+            />
+            <div class="carousel-caption">
+              <h3>FAYOUM</h3>
+              <p>Thank you, FAYOUM</p>
+              <button class="text-light btn-form px-3 py-2 rounded-3">
+                visit Us
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-img">
+            <img
+              src="images/ASWAN.jpeg"
+              alt="Chicago"
+              class="d-block w-100 img-slide"
+            />
+            <div class="carousel-caption">
+              <h3>ASWAN</h3>
+              <p>Thank you, ASWAN</p>
+              <button class="text-light btn-form px-3 py-2 rounded-3">
+                visit Us
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-img">
+            <img
+              src="images/pexels-youssef-samuil-13434105.jpg"
+              alt="NewYork"
+              class="d-block w-100 img-slide"
+            />
+            <div class="carousel-caption">
+              <h3>Sharm El Sheikh</h3>
+              <p>We love this city</p>
+              <button class="text-light btn-form px-3 py-2 rounded-3">
+                visit Us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </main>
+    <!-- intro section -->
+    <section>
+      <div class="container-fluid p-4">
+        <div class="text-white">
+          <h1>WELCOME</h1>
+          <p>
+            Egypt is a country in North Africa that borders the Red Sea and the
+            Mediterranean Sea. Neighboring countries include Libya, the Gaza
+            Strip, and Sudan. Egypt includes parts of the Sahara Desert, the
+            Libyan Desert, and the Nile River, which runs from south to north.
+          </p>
+          <button type="button" class="btn btn-lg btn-light">Learn More</button>
+        </div>
+      </div>
+      <hr class="mb-5" />
+    </section>
+    <!-- Some famous cities in Egypt -->
+    <section>
+      <div class="container rounded-3 text-white pt-4">
+        <h1 class="text-center">Some famous cities in Egypt</h1>
+      </div>
+      <!-- accordion -->
+      <div class="container">
+        <div class="accordion my-4 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                <span>Giza</span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Giza is most famous as the location of the Giza Plateau, the
+                site of some of the most impressive ancient monuments in the
+                world, including a complex of ancient Egyptian royal mortuary
+                and sacred structures, including the Great Sphinx, the Great
+                Pyramid of Giza, and a number of other large pyramids and
+                temples.
+              </div>
+            </div>
+          </div>
+          <!-- accordion item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <span>Luxor</span>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Luxor was the ancient city of Thebes, the capital of Upper Egypt
+                during the New Kingdom, and the city of Amun, later to become
+                the god Amun-Ra.
+              </div>
+            </div>
+          </div>
+          <!-- accordion item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <span>Fayoum</span>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The Fayoum is a vast depression that contains a great lake in
+                its lowest part called Birkat Qaroun ( Lake Qaroun ). This
+                depression receives water from a branch of the Nile that was
+                canalized in ancient times, now called Bahr Youssef. This splits
+                up into a dense network of secondary canals.
+              </div>
+            </div>
+          </div>
+          <!-- accordion item -->
+        </div>
+        <!-- accordion -->
+      </div>
+      <!-- container accordion -->
+    </section>
+    <section class="translate text-light pt-3">
+      <div class="container mt-5">
+        <h2 class="text-center text-light mt-5">
+          <i class="fa-solid fa-globe text-success me-1"></i>Translation
+        </h2>
+        <form>
+          <div class="mb-3">
+            <div
+              class="language d-flex justify-content-between align-items-center my-2"
+            >
+              <select class="select-language rounded-2">
+                <option hidden>languages</option>
+                <option value="1">Arabic</option>
+                <option value="2">English</option>
+                <option value="3">Frensh</option>
+                <option value="5">spanish</option>
+                <option value="6">Japanese</option>
+                <option value="7">Korean</option>
+                <option value="8">German</option>
+              </select>
+              <label>Arabic</label>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+              ></textarea>
+              <h3 class="mx-2">
+                <i class="fa-solid fa-arrow-right-arrow-left text-success"></i>
+              </h3>
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+              ></textarea>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-translat btn-light"
+            data-bs-toggle="tooltip"
+            title="COPY!"
+          >
+            COPY!
+          </button>
+        </form>
+      </div>
+      <div class="fixed-img"></div>
+      <!-- Pop-destinations" -->
+    </section>
+    <section class="Pop-destinations">
+      <div class="contanir">
+        <h2 class="text-center text-light mt-5">
+          <i class="fa-solid fa-location-dot text-success me-2"></i>POPULAR
+          DESTINATIONS IN EGYPT
+        </h2>
+        <div class="container">
+          <div
+            class="cardd row row-cols-1 row-cols-lg-3 gy-5 justify-content-around mt-3"
+          >
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/fayoum2.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/cairo.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img
+                  src="images/Sharm-El-Sheikh.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/FFayoum.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/ASWAN.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/fayoum.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/aswan3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col gx-5">
+              <div class="card cardx cardh h-100 px-1 pt-1">
+                <img src="images/FAYOUMM.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-between align-items-center"
+                  >
+                    Card title
+                    <button type="button" class="btn-card">More</button>
+                  </h5>
+                  <p class="card-textg">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="fixed-img2"></div>
+    <section>
+      <div class="container mt-5 pt-3">
+        <h2 class="text-center text-light mt-5">
+          <i class="fa-solid fa-thumbtack text-success me-2"></i>Ancient
+          Egyptian characters
+        </h2>
+        <div
+          class="cardd row row-cols-1 row-cols-lg-3 gy-5 py-5 justify-content-around"
+        >
+          <div class="col gx-5">
+            <div class="Egyptian-characters image-character1">
+              <div
+                class="info-characters d-flex flex-column justify-content-between"
+              >
+                <div class="tittle">
+                  <h3 class="chracter-name text-center mt-3">HORUS GOD</h3>
+                </div>
+                <div class="p-4">
+                  <div class="img-info img-info1 border mb-2"></div>
+                  <span>
+                    Horus was believed to be the god of war and the sky</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col gx-5">
+            <div class="Egyptian-characters image-character2">
+              <div
+                class="info-characters d-flex flex-column justify-content-between"
+              >
+                <div class="tittle">
+                  <h3 class="chracter-name text-center mt-3">KING TUT</h3>
+                </div>
+                <div class="p-4">
+                  <div class="img-info img-info2 border mb-2"></div>
+                  <span>
+                    Tutankhamun ascended to the throne around the age of
+                    nine</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col gx-5">
+            <div class="Egyptian-characters image-character3">
+              <div
+                class="info-characters d-flex flex-column justify-content-between"
+              >
+                <div class="tittle">
+                  <h3 class="chracter-name text-center mt-3">HORUS GOD</h3>
+                </div>
+                <div class="p-4">
+                  <div class="img-info img-info3 border mb-2"></div>
+                  <span> Anubis was an ancient Egyptian god of the dead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="my-5" />
+    <section>
+      <div class="container pt-3">
+        <h2 class="text-center text-light mt-5 mb-3">
+          <i class="fa-regular fa-newspaper text-success me-2"></i>EGYPT NEWS
+        </h2>
+        <div
+          class="Card mb-3 mx-auto mb-5"
+          style="max-width: 90%; max-height: 60vh"
+        >
+          <div class="row gx-0 Podcast">
+            <div class="col-lg-4 img-podcast">
+              <img src="images/FFayoum.jpg" alt="" />
+            </div>
+            <div class="col">
+              <div class="Card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="card-title Podcast-title text-success">
+                    Podcast title
+                  </h3>
+                  <div class="date">
+                    <i class="fa-regular fa-calendar-days text-success me-2"></i
+                    >SAT, OCT 19th 2023
+                  </div>
+                  <div class="progress my-2" style="height: 5px">
+                    <div class="progress-bar rounded-3"></div>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima voluptatum rem et suscipit unde explicabo excepturi
+                    voluptate aut debitis inventore! Maiores corrupti, atque
+                    consectetur autem facilis suscipit! Cupiditate, et rerum!
+                    Rerum officia optio tempora esse provident ad necessitatibus
+                    quos cumque, eligendi earum corrupti, ab numquam, veritatis
+                    consequuntur cupiditate mollitia architecto aliquam maxime
+                    labore voluptatem. Voluptate veniam est itaque praesentium!
+                    Consequuntur!
+                  </p>
+                </div>
+                <div class="icons-podcast mb-3 d-flex justify-content-between">
+                  <button>
+                    <i class="fa-solid fa-podcast text-success me-1"></i>podcast
+                  </button>
+                  <button>
+                    <i class="fa-regular fa-clock text-success me-1"></i>55 mins</button
+                  ><button>
+                    <i class="fa-solid fa-play text-success me-1"></i>Play
+                    Episode
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="Card Card-img-right mb-3 mx-auto my-5"
+          style="max-width: 90%; max-height: 60vh"
+        >
+          <div class="row gx-0 Podcast d-flex flex-row-reverse">
+            <div class="col-lg-4 img-podcast-right">
+              <img src="images/cairo2.jpg" alt="" />
+            </div>
+            <div class="col">
+              <div class="Card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="card-title Podcast-title text-success">
+                    Podcast title
+                  </h3>
+                  <div class="date">
+                    <i class="fa-regular fa-calendar-days text-success me-2"></i
+                    >SAT, OCT 19th 2023
+                  </div>
+                  <div class="progress my-2" style="height: 5px">
+                    <div class="progress-bar rounded-3"></div>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima voluptatum rem et suscipit unde explicabo excepturi
+                    voluptate aut debitis inventore! Maiores corrupti, atque
+                    consectetur autem facilis suscipit! Cupiditate, et rerum!
+                    Rerum officia optio tempora esse provident ad necessitatibus
+                    quos cumque, eligendi earum corrupti, ab numquam, veritatis
+                    consequuntur cupiditate mollitia architecto aliquam maxime
+                    labore voluptatem. Voluptate veniam est itaque praesentium!
+                    Consequuntur!
+                  </p>
+                </div>
+                <div class="icons-podcast mb-3 d-flex justify-content-between">
+                  <button>
+                    <i class="fa-solid fa-podcast text-success me-1"></i>podcast
+                  </button>
+                  <button>
+                    <i class="fa-regular fa-clock text-success me-1"></i>55 mins</button
+                  ><button>
+                    <i class="fa-solid fa-play text-success me-1"></i>Play
+                    Episode
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="Card mb-3 mx-auto my-5"
+          style="max-width: 90%; max-height: 60vh"
+        >
+          <div class="row gx-0 Podcast">
+            <div class="col-lg-4 img-podcast">
+              <img src="images/aswan2.jpg" alt="" />
+            </div>
+            <div class="col">
+              <div class="Card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="card-title Podcast-title text-success">
+                    Podcast title
+                  </h3>
+                  <div class="date">
+                    <i class="fa-regular fa-calendar-days text-success me-2"></i
+                    >SAT, OCT 19th 2023
+                  </div>
+                  <div class="progress my-2" style="height: 5px">
+                    <div class="progress-bar rounded-3"></div>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima voluptatum rem et suscipit unde explicabo excepturi
+                    voluptate aut debitis inventore! Maiores corrupti, atque
+                    consectetur autem facilis suscipit! Cupiditate, et rerum!
+                    Rerum officia optio tempora esse provident ad necessitatibus
+                    quos cumque, eligendi earum corrupti, ab numquam, veritatis
+                    consequuntur cupiditate mollitia architecto aliquam maxime
+                    labore voluptatem. Voluptate veniam est itaque praesentium!
+                    Consequuntur!
+                  </p>
+                </div>
+                <div class="icons-podcast mb-3 d-flex justify-content-between">
+                  <button>
+                    <i class="fa-solid fa-podcast text-success me-1"></i>podcast
+                  </button>
+                  <button>
+                    <i class="fa-regular fa-clock text-success me-1"></i>55 mins</button
+                  ><button>
+                    <i class="fa-solid fa-play text-success me-1"></i>Play
+                    Episode
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="Card Card-img-right mb-3 mx-auto my-5"
+          style="max-width: 90%; max-height: 60vh"
+        >
+          <div class="row gx-0 Podcast d-flex flex-row-reverse">
+            <div class="col-lg-4 img-podcast-right">
+              <img src="images/Sharm El Sheikh4.jpg" alt="" />
+            </div>
+            <div class="col">
+              <div class="Card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="card-title Podcast-title text-success">
+                    Podcast title
+                  </h3>
+                  <div class="date">
+                    <i class="fa-regular fa-calendar-days text-success me-2"></i
+                    >SAT, OCT 19th 2023
+                  </div>
+                  <div class="progress my-2" style="height: 5px">
+                    <div class="progress-bar rounded-3"></div>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima voluptatum rem et suscipit unde explicabo excepturi
+                    voluptate aut debitis inventore! Maiores corrupti, atque
+                    consectetur autem facilis suscipit! Cupiditate, et rerum!
+                    Rerum officia optio tempora esse provident ad necessitatibus
+                    quos cumque, eligendi earum corrupti, ab numquam, veritatis
+                    consequuntur cupiditate mollitia architecto aliquam maxime
+                    labore voluptatem. Voluptate veniam est itaque praesentium!
+                    Consequuntur!
+                  </p>
+                </div>
+                <div class="icons-podcast mb-3 d-flex justify-content-between">
+                  <button>
+                    <i class="fa-solid fa-podcast text-success me-1"></i>podcast
+                  </button>
+                  <button>
+                    <i class="fa-regular fa-clock text-success me-1"></i>55 mins</button
+                  ><button>
+                    <i class="fa-solid fa-play text-success me-1"></i>Play
+                    Episode
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="text-center text-light" style="margin-top: 100px">
+          <i class="fa-solid fa-angles-right fa-rotate-90 text-success me-2"></i
+          >JOIN US
+        </h2>
+        <div
+          class="icon-container row row-cols-1 row-cols-lg-3 gy-5 py-5 justify-content-around mt-4"
+        >
+          <div
+            class="icon-contan d-flex flex-column justify-content-around p-2"
+            style="width: 250px; height: 250px"
+          >
+            <h4 class="text-center">Follow</h4>
+            <div class="img-3d mx-auto">
+              <a href=""><img src="images/facebook.png" alt="facebook" /></a>
+            </div>
+            <h4 class="text-center mb-0">GO to link</h4>
+          </div>
+          <div
+            class="icon-contan d-flex flex-column justify-content-around p-2"
+            style="width: 250px; height: 250px"
+          >
+            <h4 class="text-center">Call</h4>
+            <div class="img-3d mx-auto">
+              <a href=""><img src="images/whatsapp.png" alt="facebook" /></a>
+            </div>
+            <h4 class="text-center mb-0">GO to link</h4>
+          </div>
+          <div
+            class="icon-contan d-flex flex-column justify-content-around p-2"
+            style="width: 250px; height: 250px"
+          >
+            <h4 class="text-center">Watch Vedios</h4>
+            <div class="img-3d mx-auto">
+              <a href=""><img src="images/instagram.png" alt="facebook" /></a>
+            </div>
+            <h4 class="text-center mb-0">GO to link</h4>
+          </div>
+          <div
+            class="icon-contan d-flex flex-column justify-content-around p-2"
+            style="width: 250px; height: 250px"
+          >
+            <h4 class="text-center">Like the page</h4>
+            <div class="img-3d mx-auto">
+              <a href=""><img src="images/linkedin.png" alt="facebook" /></a>
+            </div>
+            <h4 class="text-center mb-0">GO to link</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 gy-5 py-5 justify-content-around">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container text-light text-center">
+        <small class="text-light-50">&copy; copyright ByEGYcompany. All right reserved</small>
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
